@@ -1,0 +1,64 @@
+/*-------CARDS------- */
+/*-------CARDS------- */
+.container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 156px;
+}
+
+.card{
+    background: rgba(32, 40, 62, 0.8);
+    border-radius: 12px;
+    padding: 8px;
+    margin: 12px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 50px;
+
+}
+
+.card:hover{
+    background-color: #7B6EF6;
+    color: white;
+    transform: translateY(-15px);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h4{
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #EBEEF5;
+    font-weight: 600;
+}
+
+.star-average{
+    color:#FFAD49;
+    font-weight: bold;
+    position: absolute;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(8px);
+    top: 18px;
+    left: 20px;
+}
+
+.star-icon{
+    margin-right: 4px;
+}
+
+
+.star-icon:hover{
+    font-weight: bold;
+}
+

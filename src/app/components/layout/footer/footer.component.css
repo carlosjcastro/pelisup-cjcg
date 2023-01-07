@@ -1,0 +1,44 @@
+/* .footer-general{
+    position: relative;
+}
+ */
+
+.footer-pelisup{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #19223ba1;
+    position: relative;
+    width: 100%;
+    height: 105px;
+    color: white;
+    padding: 10px;
+}
+
+.footer-pelisup a{
+    font-weight: bold;
+    color: #6f00ff;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer-pelisup a:hover{
+    color: #ffffff;
+    background-color: #6f00ff;
+}
+
+.footer-pelisup h5{
+    font-size: 16px;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+
+}
+
+@media (max-width:768px) {
+    .footer-pelisup h5{
+            font-size: 12px;
+    }
+}

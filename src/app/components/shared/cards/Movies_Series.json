@@ -1,0 +1,11 @@
+{
+    "movies_series": {
+        "id": "",
+        "name": "",
+        "description":"",
+        "image":"",
+        "rating":"",
+        "category": "movie"
+        }
+}
+

@@ -1,0 +1,13 @@
+{
+    "movies": {
+        "id": "",
+        "name": "",
+        "description":"",
+        "image":"",
+        "rating":"",
+        "category": "movie"
+    }
+}
+
+
+

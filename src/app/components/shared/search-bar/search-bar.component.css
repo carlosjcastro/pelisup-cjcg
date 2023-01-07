@@ -1,0 +1,59 @@
+/* BUSCADOR */
+.container-search{
+    margin-top: 50px;
+    margin-left: 100px;
+    
+}
+
+.container-search .buscador{
+    border-radius:12px;
+    width: 380px;
+    height: 64px;
+    max-width: 500px;
+    padding: 1px 10px;
+    text-align: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    background: none;
+    border: #475069 1px solid;
+}
+
+.buscador input{
+    background: none;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+::placeholder{
+    color: #475069;
+}
+
+.buscador button{
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+    display: block;
+    padding-right: 20px;
+}
+
+.buscador button i{
+    color: #475069;
+    font-size:30px;
+    width: 19px;
+    height: 19px;
+}
+
+.buscador button i:active{
+    color: #1957ff;
+}

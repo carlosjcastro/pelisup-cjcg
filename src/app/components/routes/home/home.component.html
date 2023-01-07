@@ -1,0 +1,76 @@
+<div class="name">
+  <h1 class="title-prin title-text">
+      PelisUP!
+  </h1>
+  <p class="presentacion">Plataforma para ver películas y series 😉</p>
+</div>
+
+
+<!-- BUSCADOR DE SERIES Y PELÍCULAS-->
+<div class="container-search">
+<form action="" class="buscador">
+  <button type="submit">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10.5 20C15.7467 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.25329 20 10.5 20Z" stroke="#8e9fbb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 21L19 19" stroke="#8e9fbb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  </button>
+  <input type="text" autocomplete="off" placeholder="Search movies and TV shows" name="searchMS" [(ngModel)]="searchMS">
+</form>
+</div> 
+<!-- MENÚ SELECCIÓN DE CATEGORIAS -->
+<div class="menu-seleccion">
+  <nav class="listado">
+    <ul class="list-second">
+      <li>
+        <a class="menu-sel" [ngClass]="all ? 'menu-selTrue': 'menu-selFalse'" (click)="Category(1)"> All </a>
+        <a class="menu-sel" [ngClass]="movie ? 'menu-selTrue': 'menu-selFalse'" (click)="Category(2)"> Movies </a>
+        <a class="menu-sel" [ngClass]="serie ? 'menu-selTrue': 'menu-selFalse'" (click)="Category(3)"> TV Shows </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-------TEXTO DE CANTIDAD DE PELÍCULAS Y SERIES QUE SE MUESTRAN------->
+<div class="title-text">
+  <h2 class="d-flex text-todos"> All
+    <div [ngPlural]="Movies_Series.length">
+      <ng-template class="text-count" ngPluralCase="0"><p class="text-count"> (0) </p></ng-template>
+      <ng-template class="text-count" ngPluralCase="other"><p class="text-count"> ({{Movies_Series.length}})</p></ng-template>
+    </div>
+  </h2>
+</div>
+
+<!------- CARDS ------->
+
+<div class="container-cards" [ngPlural]="ForCategory()" >
+<!-- CARD: ALL -->
+<ng-template ngPluralCase="1">
+<div class="card" *ngFor="let movies_series of Movies_Series | filter: searchMS">
+  <div class="star-average d-flex justify-content-center align-items-center"> <i class="star-icon far fa-star"></i> {{movies_series.rating}} </div>
+  <img src="{{movies_series.image}}">
+  <h4> {{movies_series.name}} </h4>
+</div>
+</ng-template>
+
+<!-- CARD: MOVIES -->
+<ng-template ngPluralCase="2" {{ id }}>
+<div class="card" *ngFor="let movies of movies">
+  <div class="star-average d-flex justify-content-center align-items-center"> <i class="star-icon far fa-star"></i> {{movies.rating}} </div>
+  <img src="{{movies.image}}">
+  <h4> {{movies.name}} </h4>
+</div>
+</ng-template>
+
+<!-- CARD: SERIES -->
+<ng-template ngPluralCase="3">
+<div class="card" *ngFor="let series of series">
+  <div class="star-average d-flex justify-content-center align-items-center"> <i class="star-icon far fa-star"></i> {{series.rating}} </div>
+  <img src="{{series.image}}">
+  <h4> {{series.name}} </h4>
+</div>
+</ng-template>
+
+<div>
+
+</div>

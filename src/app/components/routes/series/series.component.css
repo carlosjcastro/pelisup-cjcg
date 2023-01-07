@@ -1,0 +1,91 @@
+
+/* PRESENTACION NOMBRE DE PÁGINA - SERIES */
+
+.title-mini-pelisup{
+    padding-top: 150px;
+    padding-left:190px;
+    color: #BEB7FB;
+    font-size: 15px;
+}
+
+.name{
+    padding: 0;
+    margin: 0;
+}
+
+.name .title-prin{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 80px;
+    width: 247px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: -0.02em;
+    font-style: normal;
+
+    color: #EBEEF5;
+
+}
+
+.title-prin{
+    padding-top: 2px;
+    padding-bottom: 70px;
+    padding-left:190px;
+}
+
+.presentacion{
+    color: #8E95A9;
+    padding-top: 100px;
+    padding-left:190px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.items-cantidad{
+    margin-left: 190px;
+    font-weight: 400;
+    color: #767E94;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+
+/* RESPONSIVE */
+@media  (max-width:1030px){
+    .img-logo{  
+        height: 40px;
+        width: 40px;
+        margin-left: 0px;
+
+    }
+
+    .title-mini-pelisup{
+        padding-top: 160px;
+        padding-left:45px;
+        color: #BEB7FB;
+        font-size: 15px;
+    }
+
+
+    .name .title-prin{
+        padding-top: 2px;
+        padding-left:40px;
+    }
+
+    .presentacion{
+        padding-left:40px;
+    }
+
+    .container-search{
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+
+    .menu-seleccion{
+        padding-top: 100px;
+        padding-left:30px;
+    }
+
+}
